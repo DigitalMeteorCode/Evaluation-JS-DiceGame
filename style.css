@@ -1,29 +1,62 @@
 /* Accès à  la police Lato importée : font-family: 'Lato', sans-serif; */
+/*Ne pas oublier d'utiliser le framework tailwind pour la responsivité (consignes)*/
 
 * {
     font-family: 'Lato', sans-serif;
 }
+body {
+    background-image:linear-gradient(to right, #ede1e1, #ede1e1 50%, #ffffff 50%, #ffffff);/*inverser au changement de joueur*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .nav {
-    background-color: aquamarine;
+    border: 1px solid brown;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items : center;
-
+    padding: 20px;
 }
-.nav_rules {
-    border: 1px solid black;
+.nav_rules_btn {
+    background-color: #F74F31;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 20px 20px 20px 20px;
+}
+.nav_rules_btn:hover {
+    border-radius: 20px 20px 0px 0px;
+}
+.nav_rules_speech {
+    display: none;
+    position: absolute;
+    background-color: #F74F31;
+    color: white;
+    font-size: 1.3rem;
+    min-width: 160px;
+    z-index: 1;
+    text-align: center;
+    border-radius: 0px 15px  15px 10px;
+    padding: 15px;
+}
+.nav_rules:hover .nav_rules_speech {
+    display: block;
 }
 .nav_newgame {
-    border: 1px solid black;
+    background-color: #F74F31;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px 20px 20px 20px;
+    padding : 15px;
+    margin: 15px;
+    transition: transform 0.8s ease;
 }
-.nav_newgame button {
-    background-color: purple;
+.nav_newgame:hover {
+    transform: scale(1.1,1.1);
 }
 
 .game {
-    background-color: orchid;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -47,11 +80,15 @@
 
 
 footer {
-    background-color: darkslateblue;
+    background-color: #F74F31;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .foot_credit {
-    border: 1px solid black;
+    margin: 15px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
 }
