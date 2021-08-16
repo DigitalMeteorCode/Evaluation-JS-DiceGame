@@ -5,7 +5,7 @@
     font-family: 'Lato', sans-serif;
 }
 body {
-    background-image:linear-gradient(to right, #ede1e1, #ede1e1 50%, #ffffff 50%, #ffffff);/*inverser au changement de joueur*/
+    background-image:linear-gradient(to right, #EDEFF2, #EDEFF2 50%, #ffffff 50%, #ffffff);/*inverser au changement de joueur*/
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -18,11 +18,17 @@ body {
     align-items : center;
     padding: 20px;
 }
+.nav_rules {
+    position: absolute;
+    top: 40px; 
+    left: 40px;
+}
 .nav_rules_btn {
     background-color: #F74F31;
     color: white;
     font-weight: bold;
-    padding: 15px;
+    font-size: 0.8rem;
+    padding: 10px;
     border-radius: 20px 20px 20px 20px;
 }
 .nav_rules_btn:hover {
@@ -33,8 +39,8 @@ body {
     position: absolute;
     background-color: #F74F31;
     color: white;
-    font-size: 1.3rem;
-    min-width: 160px;
+    font-size: 1.2rem;
+    min-width: 300px;
     z-index: 1;
     text-align: center;
     border-radius: 0px 15px  15px 10px;
@@ -44,12 +50,13 @@ body {
     display: block;
 }
 .nav_newgame {
-    background-color: #F74F31;
-    color: white;
-    font-weight: bold;
-    border-radius: 20px 20px 20px 20px;
+    /*background-color: #F74F31;*/
+    font-size: 2rem;
     padding : 15px;
     margin: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
     transition: transform 0.8s ease;
 }
 .nav_newgame:hover {
@@ -63,20 +70,102 @@ body {
 
 }
 .card_p1 {
-    background-color: cornflowerblue;
+    /*background-color: grey;*/
     height: 60%;
     width : 25%;
+    padding: 25px;
+    display: flex;
+    flex-direction :column;
+    justify-content: space-between;
+    align-items: center;
+}
+.card_p1_header {
+    font-weight: bold;/*bold = player active*/
+    font-size: 2.3rem;
+    color: #38120b;
+}
+.card_p1_global {
+    font-size: 4rem;
+    color:#F74F31;
+    padding: 10px;
+    margin: 10px;
+}
+.card_p1_current {
+    padding: 15px;
+    margin: 15px;
+    background-color: #F74F31;
+    color: white;
+    font-size: 1.8rem;
 }
 .card_p2 {
-    background-color: darkkhaki;
+    /*background-color: grey;*/
     height: 60%;
     width : 25%;
+    padding: 25px;
+    display: flex;
+    flex-direction :column;
+    justify-content: space-between;
+    align-items: center;
 }
+.card_p2_header {
+    font-weight: normal;/*bold = player active*/
+    font-size: 2.3rem;
+    color: #38120b;
+}
+.card_p2_global {
+    font-size: 4rem;
+    color:#F74F31;
+    padding: 10px;
+    margin: 10px;
+}
+.card_p2_current {
+    padding: 15px;
+    margin: 15px;
+    background-color: #F74F31;
+    color: white;
+    font-size: 1.8rem;
+}
+
 .card_dice {
-    background-color: darkolivegreen;
+    /*background-color: grey;*/
     height: 60%;
     width : 35%;
+    padding: 25px;
+    display: flex;
+    flex-direction :column;
+    justify-content: space-between;
+    align-items: center;
 }
+.card_dice_img {
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+}
+.card_dice_roll {
+    font-size: 2rem;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    transition: transform 0.8s ease;
+}
+.card_dice_roll:hover {
+    transform: scale(1.1,1.1);
+}
+.card_dice_hold {
+    font-size: 2rem;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    transition: transform 0.8s ease;
+}
+.card_dice_hold:hover {
+    transform: scale(1.1,1.1);
+}
+
 
 
 footer {
