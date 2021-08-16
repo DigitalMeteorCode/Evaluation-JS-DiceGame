@@ -1,0 +1,57 @@
+/* Accès à  la police Lato importée : font-family: 'Lato', sans-serif; */
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.nav {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
+
+}
+.nav_rules {
+    border: 1px solid black;
+}
+.nav_newgame {
+    border: 1px solid black;
+}
+.nav_newgame button {
+    background-color: purple;
+}
+
+.game {
+    background-color: orchid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.card_p1 {
+    background-color: cornflowerblue;
+    height: 60%;
+    width : 25%;
+}
+.card_p2 {
+    background-color: darkkhaki;
+    height: 60%;
+    width : 25%;
+}
+.card_dice {
+    background-color: darkolivegreen;
+    height: 60%;
+    width : 35%;
+}
+
+
+footer {
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot_credit {
+    border: 1px solid black;
+}

@@ -6,8 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A simple dice game, two players, first to 100pts win !"></head>
     <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    
+    <nav class="nav">
+        <div class="nav_rules">How to Play</div>
+        <div class="nav_newgame">
+            <button class="rounded-full py-3 px-6">New Game</button>
+        </div>
+    </nav>
+
+
+    <section class="game">
+        <article class="card_p1">
+            <div class="card_p1_header">Player One</div>
+            <div class="card_p1_global">Score</div>
+            <div class="card_p1_current">Current score</div>
+        </article>
+
+        <article class="card_dice">
+            <div class="card_dice_img">image</div>
+            <div class="card_dice_roll">Roll</div>
+            <div class="card_dice_hold">Hold score</div>
+        </article>
+
+        <article class="card_p2">
+            <div class="card_p2_header">Player One</div>
+            <div class="card_p2_global">Score</div>
+            <div class="card_p2_current">Current score</div>
+        </article>
+    </section>
+
+
+    <footer>
+        <div class="foot_credit">Crédits</div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
