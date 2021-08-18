@@ -67,14 +67,14 @@ body {
     transform: scale(1.1,1.1);
 }
 
+/*NAVBAR OK*/
 
 
-
-.game {
+/*.game {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+}*/
 
 .card_p1 {
     height: 60%;
@@ -110,6 +110,8 @@ body {
     font-size: 1.8rem;
     padding: 10px;
 }
+
+
 .card_p2 {
     height: 60%;
     width : 25%;
@@ -144,24 +146,26 @@ body {
     font-size: 1.8rem;
     padding: 10px;
 }
+
+
 .card_dice {
-    height: 60%;
-    width : 35%;
-    padding: 25px;
+    height: 60%;/**/
+    width : 35%;/**/
+    padding: 25px;/**/
     display: flex;
     flex-direction :column;
     justify-content: space-between;
     align-items: center;
 }
 .card_dice_img {
-    height: 250px;
-    width: 250px;
-    margin: 20px;
+    height: 250px;/**/
+    width: 250px;/**/
+    margin: 20px;/**/
 }
 .card_dice_roll {
-    font-size: 2rem;
-    padding: 15px;
-    margin: 15px;
+    font-size: 2rem;/**/
+    padding: 15px;/**/
+    margin: 15px;/**/
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;

@@ -4,11 +4,11 @@
 * {
     font-family: 'Lato', sans-serif;
 }
-/*html, body {
+html, body {
     height: 100%;
-  }*/
-body {
-  /*background-image:linear-gradient(to bottom, #EDEFF2, #EDEFF2 50%, #ffffff 50%, #ffffff);inverser au changement de joueur*/ /*background color article players à la place*/
+  }
+body {/*background color article players à la place*/
+  /*background-image:linear-gradient(to bottom, #EDEFF2, #EDEFF2 50%, #ffffff 50%, #ffffff);inverser au changement de joueur   
   /*background-size: cover;
   background-repeat: no-repeat;*/
   display: grid;
@@ -66,6 +66,52 @@ body {
     transform: scale(1.1,1.1);
 }*/
 
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card_dice {
+    height: 40%;
+    width : 95%;
+    padding: 10px;
+    display: flex;
+    flex-direction :column;
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+.card_dice_img {
+    height: 100px;
+    width: 100px;
+    margin: 8px;
+}
+.card_dice_roll {
+    font-size: 1rem;
+    padding: 8px;
+    /*margin: 10px;*/
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    order: -2;
+    /*transition: transform 0.8s ease;*/
+}
+/*.card_dice_roll:hover {
+    transform: scale(1.1,1.1);
+}*/
+.card_dice_hold {
+    font-size: 1rem;
+    padding: 8px;
+    /*margin: 10px;*/
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    /*transition: transform 0.8s ease;*/
+}
+/*.card_dice_hold:hover {
+    transform: scale(1.1,1.1);
+}*/
 
 
 
@@ -139,9 +185,10 @@ body {
 
 
     .game {
-        display: flex;
+        /*display: flex;
         justify-content: space-around;
-        align-items: center;
+        align-items: center;*/
+        flex-direction: row;
     }
     
     .card_p1 {
