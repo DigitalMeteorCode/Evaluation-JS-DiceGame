@@ -4,14 +4,18 @@
 * {
     font-family: 'Lato', sans-serif;
 }
+html, body {
+    height: 100%;
+  }
 body {
     background-image:linear-gradient(to right, #EDEFF2, #EDEFF2 50%, #ffffff 50%, #ffffff);/*inverser au changement de joueur*/
     background-size: cover;
     background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 15% 80% 5%;
 }
 
 .nav {
-    border: 1px solid brown;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,7 +54,6 @@ body {
     display: block;
 }
 .nav_newgame {
-    /*background-color: #F74F31;*/
     font-size: 2rem;
     padding : 15px;
     margin: 15px;
@@ -67,10 +70,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
+
 .card_p1 {
-    /*background-color: grey;*/
     height: 60%;
     width : 25%;
     padding: 25px;
@@ -81,27 +83,33 @@ body {
 }
 .card_p1_header {
     font-weight: bold;/*bold = player active*/
-    font-size: 2.3rem;
+    font-size: 3rem;
     color: #38120b;
 }
 .card_p1_global {
-    font-size: 4rem;
+    font-size: 5rem;
     color:#F74F31;
     padding: 10px;
     margin: 10px;
 }
 .card_p1_current {
-    padding: 15px;
-    margin: 15px;
+    padding: 30px;
+    margin: 25px;
     background-color: #F74F31;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.card_p1_pts {
     color: white;
     font-size: 1.8rem;
+    padding: 10px;
 }
 .card_p2 {
-    /*background-color: grey;*/
     height: 60%;
     width : 25%;
-    padding: 25px;
+    padding: 15px;
     display: flex;
     flex-direction :column;
     justify-content: space-between;
@@ -109,25 +117,30 @@ body {
 }
 .card_p2_header {
     font-weight: normal;/*bold = player active*/
-    font-size: 2.3rem;
+    font-size: 3rem;
     color: #38120b;
 }
 .card_p2_global {
-    font-size: 4rem;
+    font-size: 5rem;
     color:#F74F31;
     padding: 10px;
     margin: 10px;
 }
 .card_p2_current {
-    padding: 15px;
-    margin: 15px;
+    padding: 30px;
+    margin: 25px;
+    justify-content: center;
+    text-align: center;
     background-color: #F74F31;
+    color: black;
+    font-size: 1.2rem;
+}
+.card_p2_pts {
     color: white;
     font-size: 1.8rem;
+    padding: 10px;
 }
-
 .card_dice {
-    /*background-color: grey;*/
     height: 60%;
     width : 35%;
     padding: 25px;
