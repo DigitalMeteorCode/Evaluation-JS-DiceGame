@@ -76,39 +76,39 @@ body {
     align-items: center;
 }*/
 
-.card_p1 {
+.card_p1 { /*CHANGEMENT CLASSE = même pour player 1 et player 2*/
     height: 60%;
     width : 25%;
-    padding: 25px;
-    display: flex;
+    padding: 25px;/*tailwind*/
+    /*display: flex;
     flex-direction :column;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;*/
 }
 .card_p1_header {
-    font-weight: bold;/*bold = player active*/
-    font-size: 3rem;
-    color: #38120b;
+    /*font-weight: bold;bold = player active*/
+    font-size: 3rem;/*tailwind*/
+    /*color: #38120b;*/
 }
 .card_p1_global {
-    font-size: 5rem;
-    color:#F74F31;
-    padding: 10px;
-    margin: 10px;
+    font-size: 5rem;/*tailwind*/
+    /*color:#F74F31;*/
+    padding: 10px;/*tailwind*/
+    margin: 10px;/*tailwind*/
 }
 .card_p1_current {
-    padding: 30px;
-    margin: 25px;
-    background-color: #F74F31;
+    padding: 30px;/*tailwind*/
+    margin: 25px;/*tailwind*/
+    /*background-color: #F74F31;
     color: black;
     justify-content: center;
-    text-align: center;
-    font-size: 1.2rem;
+    text-align: center;*/
+    font-size: 1.2rem;/*tailwind*/
 }
 .card_p1_pts {
-    color: white;
-    font-size: 1.8rem;
-    padding: 10px;
+    /*color: white;*/
+    font-size: 1.8rem;/*tailwind*/
+    padding: 10px;/*tailwind*/
 }
 
 
@@ -149,38 +149,38 @@ body {
 
 
 .card_dice {
-    height: 60%;/**/
-    width : 35%;/**/
+    height: 60%;
+    width : 35%;
     padding: 25px;/**/
-    display: flex;
-    flex-direction :column;
+    /*display: flex;
+    flex-direction :column;*/
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center;*/
 }
 .card_dice_img {
-    height: 250px;/**/
-    width: 250px;/**/
+    height: 250px;
+    width: 250px;
     margin: 20px;/**/
 }
 .card_dice_roll {
     font-size: 2rem;/**/
     padding: 15px;/**/
     margin: 15px;/**/
-    display: flex;
+    /*display: flex;
     flex-wrap: nowrap;
-    align-items: baseline;
+    align-items: center;*/
     transition: transform 0.8s ease;
 }
 .card_dice_roll:hover {
     transform: scale(1.1,1.1);
 }
 .card_dice_hold {
-    font-size: 2rem;
-    padding: 15px;
-    margin: 15px;
-    display: flex;
+    font-size: 2rem;/**/
+    padding: 15px;/**/
+    margin: 15px;/**/
+    /*display: flex;
     flex-wrap: nowrap;
-    align-items: baseline;
+    align-items: baseline;*/
     transition: transform 0.8s ease;
 }
 .card_dice_hold:hover {
@@ -190,15 +190,15 @@ body {
 
 
 footer {
-    background-color: #F74F31;
+    /*background-color: #F74F31;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 }
 .foot_credit {
-    margin: 15px;
-    padding: 10px;
-    color: white;
-    text-align: center;
+    margin: 15px;/**/
+    padding: 10px;/**/
+    /*color: white;
+    text-align: center;*/
     font-weight: bold;
 }

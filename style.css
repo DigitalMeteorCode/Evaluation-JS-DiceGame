@@ -74,22 +74,22 @@ body {/*background color article players à la place*/
 }
 
 .card_dice {
-    height: 40%;
-    width : 95%;
-    padding: 10px;
+    height: 35%;
+    width : 100%;
+    /*padding: 10px;*/
     display: flex;
     flex-direction :column;
-    /*justify-content: space-between;*/
+    justify-content: center;
     align-items: center;
 }
 .card_dice_img {
     height: 100px;
     width: 100px;
-    margin: 8px;
+    /*margin: 8px;*/
 }
 .card_dice_roll {
     font-size: 1rem;
-    padding: 8px;
+    padding: 5px;
     /*margin: 10px;*/
     display: flex;
     flex-wrap: nowrap;
@@ -102,7 +102,7 @@ body {/*background color article players à la place*/
 }*/
 .card_dice_hold {
     font-size: 1rem;
-    padding: 8px;
+    padding: 5px;
     /*margin: 10px;*/
     display: flex;
     flex-wrap: nowrap;
@@ -112,6 +112,57 @@ body {/*background color article players à la place*/
 /*.card_dice_hold:hover {
     transform: scale(1.1,1.1);
 }*/
+
+
+.card_players {
+    /*height: 25%;*/
+    width : 100%;
+    /*padding: 10px;*/
+    display: flex;
+    flex-direction :column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDEFF2;/*player active*/
+}
+.card_players_header {
+    /*font-weight: bold;bold = player active*/
+    font-size: 1rem;
+    color: #38120b;
+}
+.card_players_global {
+    font-size: 1.2rem;
+    color:#F74F31;
+    padding: 5px;
+    /*margin: 10px;*/
+}
+.card_players_current {
+    padding: 10px;
+    /*margin: 5px;*/
+    background-color: #F74F31;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.6rem;
+}
+.card_players_pts {
+    color: white;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+footer {
+    background-color: #F74F31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot_credit {
+    margin: 8px;
+    /*padding: 10px;*/
+    color: white;
+    text-align: center;
+    /*font-weight: bold;*/
+}
 
 
 
@@ -191,41 +242,42 @@ body {/*background color article players à la place*/
         flex-direction: row;
     }
     
-    .card_p1 {
+    .card_players {
         height: 60%;
         width : 25%;
-        padding: 25px;
-        display: flex;
-        flex-direction :column;
+        /*padding: 25px; tailwind*/
+        /*display: flex;
+        flex-direction :column;*/
         justify-content: space-between;
-        align-items: center;
+        /*align-items: center;*/
+        background-color: unset;
     }
-    .card_p1_header {
-        font-weight: bold;/*bold = player active*/
-        font-size: 3rem;
-        color: #38120b;
+    .card_players_header {
+        /*font-weight: bold;bold = player active*/
+        /*font-size: 3rem; tailwind*/
+        /*color: #38120b;*/
     }
-    .card_p1_global {
-        font-size: 5rem;
-        color:#F74F31;
-        padding: 10px;
-        margin: 10px;
+    .card_players_global {
+        /*font-size: 5rem; tailwind*/
+        /*color:#F74F31;*/
+        /*padding: 10px; tailwind*/
+        /*margin: 10px; tailwind*/
     }
-    .card_p1_current {
-        padding: 30px;
-        margin: 25px;
-        background-color: #F74F31;
+    .card_players_current {
+        /*padding: 30px; tailwind*/
+        /*margin: 25px; tailwind*/
+        /*background-color: #F74F31;
         color: black;
         justify-content: center;
-        text-align: center;
-        font-size: 1.2rem;
+        text-align: center;*/
+        /*font-size: 1.2rem; tailwind*/
     }
-    .card_p1_pts {
-        color: white;
-        font-size: 1.8rem;
-        padding: 10px;
+    .card_players_pts {
+        /*color: white;*/
+        /*font-size: 1.8rem; tailwind*/
+        /*padding: 10px; tailwind*/
     }
-    .card_p2 {
+    /*.card_p2 {
         height: 60%;
         width : 25%;
         padding: 15px;
@@ -236,7 +288,7 @@ body {/*background color article players à la place*/
     }
     .card_p2_header {
         font-weight: normal;/*bold = player active*/
-        font-size: 3rem;
+        /*font-size: 3rem;
         color: #38120b;
     }
     .card_p2_global {
@@ -258,40 +310,40 @@ body {/*background color article players à la place*/
         color: white;
         font-size: 1.8rem;
         padding: 10px;
-    }
+    }*/
     .card_dice {
         height: 60%;
         width : 35%;
-        padding: 25px;
-        display: flex;
-        flex-direction :column;
+        /*padding: 25px; tailwind*/
+        /*display: flex;
+        flex-direction :column;*/
         justify-content: space-between;
-        align-items: center;
+        /*align-items: center;*/
     }
     .card_dice_img {
         height: 250px;
         width: 250px;
-        margin: 20px;
+        /*margin: 20px; tailwind*/
     }
     .card_dice_roll {
         font-size: 2rem;
-        padding: 15px;
-        margin: 15px;
-        display: flex;
+        /*padding: 15px; tailwind*/
+        /*margin: 15px; tailwind*/
+        /*display: flex;
         flex-wrap: nowrap;
-        align-items: center;
+        align-items: center;*/
         transition: transform 0.8s ease;
     }
     .card_dice_roll:hover {
         transform: scale(1.1,1.1);
     }
     .card_dice_hold {
-        font-size: 2rem;
-        padding: 15px;
-        margin: 15px;
-        display: flex;
+        /*font-size: 2rem; tailwind*/
+        /*padding: 15px; tailwind*/
+        /*margin: 15px; tailwind*/
+        /*display: flex;
         flex-wrap: nowrap;
-        align-items: center;
+        align-items: center;*/
         transition: transform 0.8s ease;
     }
     .card_dice_hold:hover {
@@ -301,16 +353,16 @@ body {/*background color article players à la place*/
     
     
     footer {
-        background-color: #F74F31;
+        /*background-color: #F74F31;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;*/
     }
     .foot_credit {
-        margin: 15px;
-        padding: 10px;
-        color: white;
+        /*margin: 15px; tailwind */
+        /*padding: 10px; tailwind */
+        /*color: white;
         text-align: center;
-        font-weight: bold;
+        font-weight: bold;*/
     }
 }
