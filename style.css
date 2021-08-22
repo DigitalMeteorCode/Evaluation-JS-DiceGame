@@ -1,31 +1,23 @@
-/* Accès à la police Lato importée : font-family: 'Lato', sans-serif; */
-/*Ne pas oublier d'utiliser le framework tailwind pour la responsivité (consignes)*/
-/* ICI MOBILE FIRST, voir résulats sur écran smartphone. Quand résultat opti, utiliser tailwind pour adapter sur écrans larges (style.css à effacer après)*/
+/*Mobile first CSS style*/
 * {
     font-family: 'Lato', sans-serif;
 }
 html, body {
     height: 100%;
   }
-body {/*background color article players à la place
-  background-image:linear-gradient(to bottom, #EDEFF2, #EDEFF2 55%, #ffffff 45%, #ffffff);*/   
+body {   
   background-size: cover;
   background-repeat: no-repeat;
   display: grid;
   grid-template-rows: 15% 80% 5%;
 }
+
 .nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items : center;
     padding: 20px;
-}
-.nav_rules {
-    /*position: absolute;
-    top: 40px; 
-    left: 40px;*/
-    /*margin-top: 25px;*/
 }
 .nav_rules_btn {
     background-color: #F74F31;
@@ -43,28 +35,20 @@ body {/*background color article players à la place
     position: absolute;
     background-color: #F74F31;
     color: white;
-    /*font-size: 1.2rem;*/
-    /*min-width: 300px;*/
     z-index: 1;
     text-align: center;
     border-radius: 0px 15px  15px 10px;
-    /*padding: 15px;*/
 }
 .nav_rules:hover .nav_rules_speech {
     display: block;
 }
 .nav_newgame {
     font-size: 1.2rem;
-    /*padding : 10px;*/
     margin: 10px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    /*transition: transform 0.8s ease;*/
 }
-/*.nav_newgame:hover {
-    transform: scale(1.1,1.1);
-}*/
 
 .game {
     display: flex;
@@ -76,7 +60,6 @@ body {/*background color article players à la place
 .card_dice {
     height: 35%;
     width : 100%;
-    /*padding: 10px;*/
     display: flex;
     flex-direction :column;
     justify-content: center;
@@ -86,7 +69,6 @@ body {/*background color article players à la place
     height: 100px;
     width: 100px;
     transition: transform .6s ease;
-    /*margin: 8px;*/
 }
 .dice_animation {
     transform: rotate(250deg);
@@ -94,42 +76,27 @@ body {/*background color article players à la place
 .card_dice_roll {
     font-size: 1rem;
     padding: 5px;
-    /*margin: 10px;*/
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
     order: -2;
-    /*transition: transform 0.8s ease;*/
 }
-/*.card_dice_roll:hover {
-    transform: scale(1.1,1.1);
-}*/
 .card_dice_hold {
     font-size: 1rem;
     padding: 5px;
-    /*margin: 10px;*/
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
-    /*transition: transform 0.8s ease;*/
 }
-/*.card_dice_hold:hover {
-    transform: scale(1.1,1.1);
-}*/
-
 
 .card_players {
-    /*height: 25%;*/
     width : 100%;
-    /*padding: 10px;*/
     display: flex;
     flex-direction :column;
     justify-content: center;
     align-items: center;
-    /*background-color: #EDEFF2;player active*/
 }
 .card_players_header {
-    /*font-weight: bold;bold = player active*/
     font-size: 1rem;
     color: #38120b;
 }
@@ -137,11 +104,9 @@ body {/*background color article players à la place
     font-size: 1.2rem;
     color:#F74F31;
     padding: 5px;
-    /*margin: 10px;*/
 }
 .card_players_current {
     padding: 10px;
-    /*margin: 5px;*/
     background-color: #F74F31;
     color: black;
     justify-content: center;
@@ -162,10 +127,8 @@ footer {
 }
 .foot_credit {
     margin: 8px;
-    /*padding: 10px;*/
     color: white;
     text-align: center;
-    /*font-weight: bold;*/
 }
 
 .modal {
@@ -194,230 +157,71 @@ footer {
     font-weight: bold;
     color: #ffffff;
 }
-/*.modal_image {
-    min-height: 200px;
-    min-width: 300px;
-}*/
 .modal_close {
-    /*position: relative;
-    float: bottom;*/
     cursor: pointer;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     text-align: center;
     font-size: 1rem;
-    /*padding: 0 10px 0 0;*/
 }
 
-
-
-
-
-/*ELEMENTS INCHANGEABLES VIA TAILWIND pour écrans DESKTOP*/ /* prefix breakpoint tailwind: lg */
+/*Desktop CSS style not run by Tailwind*/
 @media (min-width: 1024px) { 
     html, body {
         height: 100%;
       }
-    body {
-        background-image:linear-gradient(to right, #EDEFF2, #EDEFF2 50%, #ffffff 50%, #ffffff);
-        /*background-size: cover;
-        background-repeat: no-repeat;*/
-        /*display: grid;
-        grid-template-rows: 15% 80% 5%;*/
-    }
-    
-    /*.nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items : center;
-        padding: 20px;
-    }*/
+
     .nav_rules {
         position: absolute;
         top: 40px; 
         left: 40px;
     }
-    /*.nav_rules_btn {
-        background-color: #F74F31;
-        color: white;
-        font-weight: bold;
-        font-size: 0.8rem;
-        padding: 10px;
-        border-radius: 20px 20px 20px 20px;
-    }
-    .nav_rules_btn:hover {
-        border-radius: 20px 20px 0px 0px;
-    }*/
     .nav_rules_speech {
-        /*display: none;
-        position: absolute;
-        background-color: #F74F31;
-        color: white;*/
-        /*font-size: 1.2rem; géré par tailwind*/
         min-width: 300px;
-        /*z-index: 1;
-        text-align: center;
-        border-radius: 0px 15px  15px 10px;*/
-        /*padding: 15px; géré par tailwind*/
     }
-    /*.nav_rules:hover .nav_rules_speech {
-        display: block;
-    }*/
     .nav_newgame {
-        /*font-size: 2rem; tailwind
-        padding : 15px; tailwind
-        margin: 15px;  tailwind
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;*/
         transition: transform 0.8s ease;
     }
     .nav_newgame:hover {
         transform: scale(1.1,1.1);
     }
-    
-
-
 
     .game {
-        /*display: flex;
-        justify-content: space-around;
-        align-items: center;*/
         flex-direction: row;
     }
-    
+
     .card_players {
         height: 60%;
         width : 25%;
-        /*padding: 25px; tailwind*/
-        /*display: flex;
-        flex-direction :column;*/
         justify-content: space-between;
-        /*align-items: center;*/
         background-color: unset;
     }
-    .card_players_header {
-        /*font-weight: bold;bold = player active*/
-        /*font-size: 3rem; tailwind*/
-        /*color: #38120b;*/
-    }
-    .card_players_global {
-        /*font-size: 5rem; tailwind*/
-        /*color:#F74F31;*/
-        /*padding: 10px; tailwind*/
-        /*margin: 10px; tailwind*/
-    }
-    .card_players_current {
-        /*padding: 30px; tailwind*/
-        /*margin: 25px; tailwind*/
-        /*background-color: #F74F31;
-        color: black;
-        justify-content: center;
-        text-align: center;*/
-        /*font-size: 1.2rem; tailwind*/
-    }
-    .card_players_pts {
-        /*color: white;*/
-        /*font-size: 1.8rem; tailwind*/
-        /*padding: 10px; tailwind*/
-    }
-    /*.card_p2 {
-        height: 60%;
-        width : 25%;
-        padding: 15px;
-        display: flex;
-        flex-direction :column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .card_p2_header {
-        font-weight: normal;/*bold = player active*/
-        /*font-size: 3rem;
-        color: #38120b;
-    }
-    .card_p2_global {
-        font-size: 5rem;
-        color:#F74F31;
-        padding: 10px;
-        margin: 10px;
-    }
-    .card_p2_current {
-        padding: 30px;
-        margin: 25px;
-        justify-content: center;
-        text-align: center;
-        background-color: #F74F31;
-        color: black;
-        font-size: 1.2rem;
-    }
-    .card_p2_pts {
-        color: white;
-        font-size: 1.8rem;
-        padding: 10px;
-    }*/
+
     .card_dice {
         height: 60%;
         width : 35%;
-        /*padding: 25px; tailwind*/
-        /*display: flex;
-        flex-direction :column;*/
         justify-content: space-between;
-        /*align-items: center;*/
     }
     .card_dice_img {
         height: 250px;
         width: 250px;
-        /*margin: 20px; tailwind*/
     }
     .card_dice_roll {
         font-size: 2rem;
-        /*padding: 15px; tailwind*/
-        /*margin: 15px; tailwind*/
-        /*display: flex;
-        flex-wrap: nowrap;
-        align-items: center;*/
         transition: transform 0.8s ease;
     }
     .card_dice_roll:hover {
         transform: scale(1.1,1.1);
     }
     .card_dice_hold {
-        /*font-size: 2rem; tailwind*/
-        /*padding: 15px; tailwind*/
-        /*margin: 15px; tailwind*/
-        /*display: flex;
-        flex-wrap: nowrap;
-        align-items: center;*/
         transition: transform 0.8s ease;
     }
     .card_dice_hold:hover {
         transform: scale(1.1,1.1);
     }
-    
-    
-    
-    footer {
-        /*background-color: #F74F31;
-        display: flex;
-        justify-content: center;
-        align-items: center;*/
-    }
-    .foot_credit {
-        /*margin: 15px; tailwind */
-        /*padding: 10px; tailwind */
-        /*color: white;
-        text-align: center;
-        font-weight: bold;*/
-    }
 
-    /*.modal_content {
-        width: 50%;
-        height: 50%;
-    }*/
     .modal_content p {
         font-size: 1.8rem;
     }
-    
 }

@@ -14,10 +14,9 @@
 </head>
 <body id="bgColor">
     <nav class="nav">
-        
         <div class="nav_rules">
             <button class="nav_rules_btn lg:p-3 lg:text-xl">HOW TO PLAY</button>
-            <div class="nav_rules_speech lg:text-2xl lg:p-6">Roll the dice. <br>The result will be keep in your current score. <br>You can roll the dice many times as you want, but play smart :<br> If the dice hits 1, your current score would be reset to 0 and your turn would end.<br> Hold your current score to save it in your global score and end your turn. <br>First player to reach 100 in his global score wins !</div>
+            <div class="nav_rules_speech lg:text-2xl lg:p-6">Roll the dice. <br>The result will be keep in your current score. <br>You can roll the dice many times as you want, but play smart :<br> If the dice hits 1, your current score would be reset to 0 and your turn would end.<br> Hold your current score to save it in your global score and to end your turn. <br>First player to reach 100 in his global score wins !</div>
         </div>
         <button id="newGameButton" class="nav_newgame lg:text-5xl lg:p-lg4 lg:m-4">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="#F74F31">
@@ -25,15 +24,12 @@
             </svg> NEW GAME
         </button>
     </nav>
-
-
     <section class="game">
         <article class="card_players lg:p-6">
             <div class="card_players_header lg:text-5xl" id="p1">PLAYER ONE</div>
             <div class="card_players_global lg:text-7xl lg:p-2 lg:m-2" id="globalP1">SCORE</div>
             <div class="card_players_current lg:p-6 lg:m-5 lg:text-xl">CURRENT <div class="card_players_pts lg:text-3xl lg:p-2" id="currentP1">SCORE</div></div>
         </article>
-
         <article class="card_dice lg:p-6">
             <img src="img/Dice1.png" class="card_dice_img shadow-lg lg:m-5" alt="dice1" id="dice"></div>
             <button id="roll" class="card_dice_roll lg:text-4xl lg:p-4 lg:m-4">
@@ -45,21 +41,15 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
                 </svg> HOLD</button>
         </article>
-
         <article class="card_players lg:p-6">
             <div class="card_players_header lg:text-5xl" id="p2">PLAYER TWO</div>
             <div class="card_players_global lg:text-7xl lg:p-2 lg:m-2"  id="globalP2">SCORE</div>
             <div class="card_players_current lg:p-6 lg:m-5 lg:text-xl">CURRENT <div class="card_players_pts lg:text-3xl lg:p-2" id="currentP2">SCORE</div> </div>
         </article>
     </section>
-
-
     <footer>
         <div class="foot_credit lg:m-4 lg:p-3 lg:text-2xl">Created by Digital Meteor - 2021</div>
     </footer>
-
-
-
     <div id="modal" class="modal">
         <div class="modal_content shadow-lg lg:m-5">
             <p id="victoryMessage"></p>
@@ -72,8 +62,6 @@
             </div>
         </div>
     </div>
-
-
     <script src="script.js"></script>
 </body>
 </html>
