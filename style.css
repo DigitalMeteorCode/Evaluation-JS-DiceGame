@@ -1,0 +1,227 @@
+/*Mobile first CSS style*/
+* {
+    font-family: 'Lato', sans-serif;
+}
+html, body {
+    height: 100%;
+  }
+body {   
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 15% 80% 5%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
+    padding: 20px;
+}
+.nav_rules_btn {
+    background-color: #F74F31;
+    color: white;
+    font-weight: bold;
+    font-size: 0.6rem;
+    padding: 8px;
+    border-radius: 20px 20px 20px 20px;
+}
+.nav_rules_btn:hover {
+    border-radius: 20px 20px 0px 0px;
+}
+.nav_rules_speech {
+    display: none;
+    position: absolute;
+    background-color: #F74F31;
+    color: white;
+    z-index: 1;
+    text-align: center;
+    border-radius: 0px 15px  15px 10px;
+}
+.nav_rules:hover .nav_rules_speech {
+    display: block;
+}
+.nav_newgame {
+    font-size: 1.2rem;
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card_dice {
+    height: 35%;
+    width : 100%;
+    display: flex;
+    flex-direction :column;
+    justify-content: center;
+    align-items: center;
+}
+.card_dice_img {
+    height: 100px;
+    width: 100px;
+    transition: transform .6s ease;
+}
+.dice_animation {
+    transform: rotate(250deg);
+}
+.card_dice_roll {
+    font-size: 1rem;
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    order: -2;
+}
+.card_dice_hold {
+    font-size: 1rem;
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+
+.card_players {
+    width : 100%;
+    display: flex;
+    flex-direction :column;
+    justify-content: center;
+    align-items: center;
+}
+.card_players_header {
+    font-size: 1rem;
+    color: #38120b;
+}
+.card_players_global {
+    font-size: 1.2rem;
+    color:#F74F31;
+    padding: 5px;
+}
+.card_players_current {
+    padding: 10px;
+    background-color: #F74F31;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.6rem;
+}
+.card_players_pts {
+    color: white;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+footer {
+    background-color: #F74F31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot_credit {
+    margin: 8px;
+    color: white;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 25%;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+}
+.modal_content {
+    background-color: #F74F31;
+    width: 50%;
+    height: 60%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content : space-around;
+    align-items: center;
+}
+.modal_content p {
+    margin: 15px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+.modal_close {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*Desktop CSS style not run by Tailwind*/
+@media (min-width: 1024px) { 
+    html, body {
+        height: 100%;
+      }
+
+    .nav_rules {
+        position: absolute;
+        top: 40px; 
+        left: 40px;
+    }
+    .nav_rules_speech {
+        min-width: 300px;
+    }
+    .nav_newgame {
+        transition: transform 0.8s ease;
+    }
+    .nav_newgame:hover {
+        transform: scale(1.1,1.1);
+    }
+
+    .game {
+        flex-direction: row;
+    }
+
+    .card_players {
+        height: 60%;
+        width : 25%;
+        justify-content: space-between;
+        background-color: unset;
+    }
+
+    .card_dice {
+        height: 60%;
+        width : 35%;
+        justify-content: space-between;
+    }
+    .card_dice_img {
+        height: 250px;
+        width: 250px;
+    }
+    .card_dice_roll {
+        font-size: 2rem;
+        transition: transform 0.8s ease;
+    }
+    .card_dice_roll:hover {
+        transform: scale(1.1,1.1);
+    }
+    .card_dice_hold {
+        transition: transform 0.8s ease;
+    }
+    .card_dice_hold:hover {
+        transform: scale(1.1,1.1);
+    }
+
+    .modal_content p {
+        font-size: 1.8rem;
+    }
+}
